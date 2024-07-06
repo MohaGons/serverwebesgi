@@ -4,7 +4,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/products")
+    fetch("http://localhost:5173/api/products")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
