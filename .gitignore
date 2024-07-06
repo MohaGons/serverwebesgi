@@ -1,4 +1,4 @@
-./frontend/build
-./frontend/node_modules
-./backend/node_modules
-./nginx.conf
+frontend/build
+frontend/node_modules
+backend/node_modules
+nginx.conf
