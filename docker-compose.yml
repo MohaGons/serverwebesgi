@@ -8,7 +8,7 @@ services:
     working_dir: /usr/src/app
     command: sh -c "chmod +x /init.sh && /init.sh"
     env_file:
-      - ./backend/.env
+      - ./.env
     depends_on:
       - db
   db:
@@ -25,16 +25,19 @@ services:
     volumes:
       - ./frontend:/app
     env_file:
-      - ./frontend/.env
+      - ./.env
     command: sh -c "npm install && npm run start"
   adminer:
     image: adminer
   nginx:
     image: nginx:latest
     ports:
-      - "5173:80"
+      - "${SERVER_PORT}:80"
+      - "${SERVER_PORT_HTTPS}:443"
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    env_file:
+      - ./.env
     depends_on:
       - frontend
       - server

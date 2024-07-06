@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 
 function App() {
   const [products, setProducts] = useState([]);
+    let url = `${process.env.SERVER_URL}/api/products`.replace('undefined\/','');
 
-  useEffect(() => {
-    fetch("http://localhost:5173/api/products")
+    useEffect(() => {
+    fetch(`${url}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
