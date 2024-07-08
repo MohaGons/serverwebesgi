@@ -71,5 +71,4 @@ services:
     env_file:
       - ./.env
     ports:
-      - "139:139/tcp"
       - "445:445/tcp"
