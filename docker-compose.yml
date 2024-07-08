@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 services:
   server:
     image: node:20-alpine
@@ -29,8 +29,6 @@ services:
     command: sh -c "npm install && npm run start"
   adminer:
     image: adminer
-    volumes:
-      - ./logs/nginx:/var/log/nginx
   nginx:
     image: nginx:latest
     ports:
@@ -38,6 +36,8 @@ services:
       - "${SERVER_PORT_HTTPS}:443"
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./certbot/www:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/nginx/ssl/:ro
       - ./nginx.conf:/etc/nginx/nginx.conf
       - ./logs/nginx:/var/log/nginx
     env_file:
@@ -46,6 +46,11 @@ services:
       - frontend
       - server
       - adminer
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - ./certbot/www/:/var/www/certbot/:rw
+      - ./certbot/conf/:/etc/letsencrypt/:rw
   fail2ban:
     image: crazymax/fail2ban:latest
     container_name: fail2ban
