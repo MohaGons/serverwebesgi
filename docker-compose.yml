@@ -29,6 +29,8 @@ services:
     command: sh -c "npm install && npm run start"
   adminer:
     image: adminer
+    volumes:
+      - ./nginx/logs:/var/log/nginx
   nginx:
     image: nginx:latest
     ports:
@@ -38,8 +40,7 @@ services:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
       - ./certbot/www:/var/www/certbot/:ro
       - ./certbot/conf/:/etc/nginx/ssl/:ro
-      - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./logs/nginx:/var/log/nginx
+      - ./nginx/logs:/var/log/nginx
     env_file:
       - ./.env
     depends_on:
@@ -53,11 +54,11 @@ services:
       - ./certbot/conf/:/etc/letsencrypt/:rw
   fail2ban:
     image: crazymax/fail2ban:latest
-    container_name: fail2ban
     volumes:
-      - ./logs/nginx:/var/log/nginx
-      - ./jail.local:/data/etc/fail2ban/jail.local:ro
-      - ./fail2ban.nginx.conf:/data/etc/fail2ban/filter.d/nginx.conf:ro
-      - ./fail2ban.adminer.conf:/data/etc/fail2ban/filter.d/adminer.conf:ro
-    network_mode: host
-    restart: unless-stopped
+      - ./fail2ban/data:/data
+      - ./nginx/logs:/var/log/nginx:ro    # Monte les logs Nginx en lecture seule
+      - ./adminer/logs:/var/log/adminer:ro # Monte les logs Adminer en lecture seule
+    environment:
+      - TZ=Europe/Paris
+    cap_add:
+      - NET_ADMIN
