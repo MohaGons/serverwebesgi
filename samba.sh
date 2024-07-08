@@ -17,7 +17,7 @@ EOT
 
 (echo "$SAMBA_PASS"; echo "$SAMBA_PASS") | smbpasswd -s -a sambauser
 chown -R sambauser:sambauser /srv/samba/share
-chmod -R 770 /srv/samba/share
+chmod -R 0777 /srv/samba/share
 smbd -D
 nmbd -D
 tail -f /dev/null
