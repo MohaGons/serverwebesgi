@@ -62,3 +62,14 @@ services:
       - TZ=Europe/Paris
     cap_add:
       - NET_ADMIN
+  samba:
+    build: ./img/samba
+    volumes:
+      - ./storage:/srv/samba/share
+      - ./samba.sh:/init.sh:ro
+    command: sh -c "chmod +x /init.sh && /init.sh"
+    env_file:
+      - ./.env
+    ports:
+      - "139:139/tcp"
+      - "445:445/tcp"
