@@ -161,3 +161,263 @@
 2024/07/08 21:41:33 [notice] 1#1: signal 17 (SIGCHLD) received from 28
 2024/07/08 21:41:33 [notice] 1#1: worker process 28 exited with code 0
 2024/07/08 21:41:33 [notice] 1#1: exit
+2024/07/08 21:57:28 [notice] 1#1: using the "epoll" event method
+2024/07/08 21:57:28 [notice] 1#1: nginx/1.27.0
+2024/07/08 21:57:28 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/08 21:57:28 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/08 21:57:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/08 21:57:28 [notice] 1#1: start worker processes
+2024/07/08 21:57:28 [notice] 1#1: start worker process 28
+2024/07/08 21:57:39 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 78.197.100.40, server: serveradmingrp11.online, request: "GET / HTTP/1.1", upstream: "http://172.18.0.6:3000/", host: "serveradmingrp11.online"
+2024/07/08 21:57:39 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 78.197.100.40, server: serveradmingrp11.online, request: "GET / HTTP/1.1", upstream: "http://172.18.0.6:3000/", host: "serveradmingrp11.online"
+2024/07/08 21:57:42 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 78.197.100.40, server: serveradmingrp11.online, request: "GET / HTTP/1.1", upstream: "http://172.18.0.6:3000/", host: "serveradmingrp11.online"
+2024/07/08 21:57:42 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 78.197.100.40, server: serveradmingrp11.online, request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.18.0.6:3000/favicon.ico", host: "serveradmingrp11.online", referrer: "https://serveradmingrp11.online/"
+2024/07/08 21:58:06 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/08 21:58:06 [notice] 28#28: gracefully shutting down
+2024/07/08 22:00:32 [notice] 1#1: using the "epoll" event method
+2024/07/08 22:00:32 [notice] 1#1: nginx/1.27.0
+2024/07/08 22:00:32 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/08 22:00:32 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/08 22:00:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/08 22:00:32 [notice] 1#1: start worker processes
+2024/07/08 22:00:32 [notice] 1#1: start worker process 28
+2024/07/08 22:00:48 [warn] 28#28: *1 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 88.178.34.26, server: serveradmingrp11.online, request: "GET /static/js/bundle.js HTTP/1.1", upstream: "http://172.18.0.5:3000/static/js/bundle.js", host: "serveradmingrp11.online", referrer: "https://serveradmingrp11.online/"
+2024/07/08 22:00:48 [warn] 28#28: *4 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 88.178.34.26, server: serveradmingrp11.online, request: "GET /static/js/bundle.js HTTP/1.1", upstream: "http://172.18.0.5:3000/static/js/bundle.js", host: "serveradmingrp11.online"
+2024/07/08 22:02:08 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/08 22:02:08 [notice] 28#28: gracefully shutting down
+2024/07/08 22:02:08 [notice] 28#28: exiting
+2024/07/08 22:02:08 [notice] 28#28: exit
+2024/07/08 22:02:08 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/08 22:02:08 [notice] 1#1: worker process 28 exited with code 0
+2024/07/08 22:02:08 [notice] 1#1: exit
+2024/07/08 22:03:58 [notice] 1#1: using the "epoll" event method
+2024/07/08 22:03:58 [notice] 1#1: nginx/1.27.0
+2024/07/08 22:03:58 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/08 22:03:58 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/08 22:03:58 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/08 22:03:58 [notice] 1#1: start worker processes
+2024/07/08 22:03:58 [notice] 1#1: start worker process 28
+2024/07/08 22:04:13 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 78.197.100.40, server: serveradmingrp11.online, request: "GET / HTTP/1.1", upstream: "http://172.18.0.3:3000/", host: "serveradmingrp11.online"
+2024/07/08 22:04:13 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 78.197.100.40, server: serveradmingrp11.online, request: "GET / HTTP/1.1", upstream: "http://172.18.0.3:3000/", host: "serveradmingrp11.online"
+2024/07/08 22:04:13 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 78.197.100.40, server: serveradmingrp11.online, request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.18.0.3:3000/favicon.ico", host: "serveradmingrp11.online", referrer: "https://serveradmingrp11.online/"
+2024/07/08 22:05:00 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/08 22:05:00 [notice] 28#28: gracefully shutting down
+2024/07/08 22:05:00 [notice] 28#28: exiting
+2024/07/08 22:05:00 [notice] 28#28: exit
+2024/07/08 22:05:00 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/08 22:05:00 [notice] 1#1: worker process 28 exited with code 0
+2024/07/08 22:05:00 [notice] 1#1: exit
+2024/07/08 22:07:00 [notice] 1#1: using the "epoll" event method
+2024/07/08 22:07:00 [notice] 1#1: nginx/1.27.0
+2024/07/08 22:07:00 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/08 22:07:00 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/08 22:07:00 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/08 22:07:00 [notice] 1#1: start worker processes
+2024/07/08 22:07:00 [notice] 1#1: start worker process 28
+2024/07/08 22:07:24 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/08 22:07:24 [notice] 28#28: gracefully shutting down
+2024/07/08 22:07:24 [notice] 28#28: exiting
+2024/07/08 22:07:24 [notice] 28#28: exit
+2024/07/08 22:07:24 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/08 22:07:24 [notice] 1#1: worker process 28 exited with code 0
+2024/07/08 22:07:24 [notice] 1#1: exit
+2024/07/08 22:07:48 [notice] 1#1: using the "epoll" event method
+2024/07/08 22:07:48 [notice] 1#1: nginx/1.27.0
+2024/07/08 22:07:48 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/08 22:07:48 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/08 22:07:48 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/08 22:07:48 [notice] 1#1: start worker processes
+2024/07/08 22:07:48 [notice] 1#1: start worker process 28
+2024/07/09 05:29:14 [warn] 28#28: *238 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 95.177.163.4, server: serveradmingrp11.online, request: "GET /static/js/bundle.js HTTP/1.1", upstream: "http://172.18.0.3:3000/static/js/bundle.js", host: "serveradmingrp11.online", referrer: "https://serveradmingrp11.online/"
+2024/07/09 09:03:26 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/09 09:03:26 [notice] 28#28: gracefully shutting down
+2024/07/09 09:03:26 [notice] 28#28: exiting
+2024/07/09 09:03:26 [notice] 28#28: exit
+2024/07/09 09:03:26 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/09 09:03:26 [notice] 1#1: worker process 28 exited with code 0
+2024/07/09 09:03:26 [notice] 1#1: exit
+2024/07/09 09:03:47 [notice] 1#1: using the "epoll" event method
+2024/07/09 09:03:47 [notice] 1#1: nginx/1.27.0
+2024/07/09 09:03:47 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/09 09:03:47 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/09 09:03:47 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/09 09:03:47 [notice] 1#1: start worker processes
+2024/07/09 09:03:47 [notice] 1#1: start worker process 28
+2024/07/09 09:04:14 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/09 09:04:14 [notice] 28#28: gracefully shutting down
+2024/07/09 09:04:14 [notice] 28#28: exiting
+2024/07/09 09:04:14 [notice] 28#28: exit
+2024/07/09 09:04:14 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/09 09:04:14 [notice] 1#1: worker process 28 exited with code 0
+2024/07/09 09:04:14 [notice] 1#1: exit
+2024/07/09 09:04:44 [notice] 1#1: using the "epoll" event method
+2024/07/09 09:04:44 [notice] 1#1: nginx/1.27.0
+2024/07/09 09:04:44 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/09 09:04:44 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/09 09:04:44 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/09 09:04:44 [notice] 1#1: start worker processes
+2024/07/09 09:04:44 [notice] 1#1: start worker process 28
+2024/07/09 09:06:50 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/09 09:06:50 [notice] 28#28: gracefully shutting down
+2024/07/09 09:06:50 [notice] 28#28: exiting
+2024/07/09 09:06:50 [notice] 28#28: exit
+2024/07/09 09:06:50 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/09 09:06:50 [notice] 1#1: worker process 28 exited with code 0
+2024/07/09 09:06:50 [notice] 1#1: exit
+2024/07/09 09:07:10 [notice] 1#1: using the "epoll" event method
+2024/07/09 09:07:10 [notice] 1#1: nginx/1.27.0
+2024/07/09 09:07:10 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/09 09:07:10 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/09 09:07:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/09 09:07:10 [notice] 1#1: start worker processes
+2024/07/09 09:07:10 [notice] 1#1: start worker process 28
+2024/07/09 09:07:22 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 83.142.147.16, server: serveradmingrp11.online, request: "GET / HTTP/1.1", upstream: "http://172.18.0.4:3000/", host: "serveradmingrp11.online"
+2024/07/09 09:07:22 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 83.142.147.16, server: serveradmingrp11.online, request: "GET / HTTP/1.1", upstream: "http://172.18.0.4:3000/", host: "serveradmingrp11.online"
+2024/07/09 09:07:56 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/09 09:07:56 [notice] 28#28: gracefully shutting down
+2024/07/09 09:07:56 [notice] 28#28: exiting
+2024/07/09 09:07:56 [notice] 28#28: exit
+2024/07/09 09:07:56 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/09 09:07:56 [notice] 1#1: worker process 28 exited with code 0
+2024/07/09 09:07:56 [notice] 1#1: exit
+2024/07/09 09:08:22 [notice] 1#1: using the "epoll" event method
+2024/07/09 09:08:22 [notice] 1#1: nginx/1.27.0
+2024/07/09 09:08:22 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/09 09:08:22 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/09 09:08:22 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/09 09:08:22 [notice] 1#1: start worker processes
+2024/07/09 09:08:22 [notice] 1#1: start worker process 28
+2024/07/09 09:20:48 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/09 09:20:48 [notice] 28#28: gracefully shutting down
+2024/07/09 09:20:48 [notice] 28#28: exiting
+2024/07/09 09:20:48 [notice] 28#28: exit
+2024/07/09 09:20:48 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/09 09:20:48 [notice] 1#1: worker process 28 exited with code 0
+2024/07/09 09:20:48 [notice] 1#1: exit
+2024/07/09 09:21:12 [notice] 1#1: using the "epoll" event method
+2024/07/09 09:21:12 [notice] 1#1: nginx/1.27.0
+2024/07/09 09:21:12 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/09 09:21:12 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/09 09:21:12 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/09 09:21:12 [notice] 1#1: start worker processes
+2024/07/09 09:21:12 [notice] 1#1: start worker process 28
+2024/07/09 09:21:21 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 83.142.147.16, server: serveradmingrp11.online, request: "GET / HTTP/1.1", upstream: "http://172.18.0.2:3000/", host: "serveradmingrp11.online"
+2024/07/09 09:21:22 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 83.142.147.16, server: serveradmingrp11.online, request: "GET / HTTP/1.1", upstream: "http://172.18.0.2:3000/", host: "serveradmingrp11.online"
+2024/07/09 09:22:00 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/09 09:22:00 [notice] 28#28: gracefully shutting down
+2024/07/09 09:22:00 [notice] 28#28: exiting
+2024/07/09 09:22:00 [notice] 28#28: exit
+2024/07/09 09:22:00 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/09 09:22:00 [notice] 1#1: worker process 28 exited with code 0
+2024/07/09 09:22:00 [notice] 1#1: exit
+2024/07/09 09:22:23 [notice] 1#1: using the "epoll" event method
+2024/07/09 09:22:23 [notice] 1#1: nginx/1.27.0
+2024/07/09 09:22:23 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/09 09:22:23 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/09 09:22:23 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/09 09:22:23 [notice] 1#1: start worker processes
+2024/07/09 09:22:23 [notice] 1#1: start worker process 28
+2024/07/09 09:52:17 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/09 09:52:17 [notice] 28#28: gracefully shutting down
+2024/07/09 09:52:17 [notice] 28#28: exiting
+2024/07/09 09:52:17 [notice] 28#28: exit
+2024/07/09 09:52:17 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/09 09:52:17 [notice] 1#1: worker process 28 exited with code 0
+2024/07/09 09:52:17 [notice] 1#1: exit
+2024/07/09 09:52:42 [notice] 1#1: using the "epoll" event method
+2024/07/09 09:52:42 [notice] 1#1: nginx/1.27.0
+2024/07/09 09:52:42 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/09 09:52:42 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/09 09:52:42 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/09 09:52:42 [notice] 1#1: start worker processes
+2024/07/09 09:52:42 [notice] 1#1: start worker process 28
+2024/07/09 09:57:12 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/09 09:57:12 [notice] 28#28: gracefully shutting down
+2024/07/09 09:57:12 [notice] 28#28: exiting
+2024/07/09 09:57:12 [notice] 28#28: exit
+2024/07/09 09:57:12 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/09 09:57:12 [notice] 1#1: worker process 28 exited with code 0
+2024/07/09 09:57:12 [notice] 1#1: exit
+2024/07/09 10:05:39 [notice] 1#1: using the "epoll" event method
+2024/07/09 10:05:39 [notice] 1#1: nginx/1.27.0
+2024/07/09 10:05:39 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/09 10:05:39 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/09 10:05:39 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/09 10:05:39 [notice] 1#1: start worker processes
+2024/07/09 10:05:39 [notice] 1#1: start worker process 28
+2024/07/09 10:06:21 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/09 10:06:21 [notice] 28#28: gracefully shutting down
+2024/07/09 10:40:48 [notice] 1#1: using the "epoll" event method
+2024/07/09 10:40:48 [notice] 1#1: nginx/1.27.0
+2024/07/09 10:40:48 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/09 10:40:48 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/09 10:40:48 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/09 10:40:48 [notice] 1#1: start worker processes
+2024/07/09 10:40:48 [notice] 1#1: start worker process 28
+2024/07/09 10:41:01 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 83.142.147.16, server: serveradmingrp11.online, request: "GET / HTTP/1.1", upstream: "http://172.18.0.5:3000/", host: "serveradmingrp11.online"
+2024/07/09 10:41:01 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 83.142.147.16, server: serveradmingrp11.online, request: "GET / HTTP/1.1", upstream: "http://172.18.0.5:3000/", host: "serveradmingrp11.online"
+2024/07/09 10:41:16 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/09 10:41:16 [notice] 28#28: gracefully shutting down
+2024/07/09 10:41:16 [notice] 28#28: exiting
+2024/07/09 10:41:16 [notice] 28#28: exit
+2024/07/09 10:41:16 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/09 10:41:16 [notice] 1#1: worker process 28 exited with code 0
+2024/07/09 10:41:16 [notice] 1#1: exit
+2024/07/09 10:51:43 [notice] 1#1: using the "epoll" event method
+2024/07/09 10:51:43 [notice] 1#1: nginx/1.27.0
+2024/07/09 10:51:43 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/09 10:51:43 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/09 10:51:43 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/09 10:51:43 [notice] 1#1: start worker processes
+2024/07/09 10:51:43 [notice] 1#1: start worker process 28
+2024/07/09 10:52:15 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/09 10:52:15 [notice] 28#28: gracefully shutting down
+2024/07/09 10:52:15 [notice] 28#28: exiting
+2024/07/09 10:52:15 [notice] 28#28: exit
+2024/07/09 10:52:16 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/09 10:52:16 [notice] 1#1: worker process 28 exited with code 0
+2024/07/09 10:52:16 [notice] 1#1: exit
+2024/07/09 10:53:50 [notice] 1#1: using the "epoll" event method
+2024/07/09 10:53:50 [notice] 1#1: nginx/1.27.0
+2024/07/09 10:53:50 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/09 10:53:50 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/09 10:53:50 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/09 10:53:50 [notice] 1#1: start worker processes
+2024/07/09 10:53:50 [notice] 1#1: start worker process 28
+2024/07/09 10:54:26 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/09 10:54:26 [notice] 28#28: gracefully shutting down
+2024/07/09 10:54:26 [notice] 28#28: exiting
+2024/07/09 10:54:26 [notice] 28#28: exit
+2024/07/09 10:54:26 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/09 10:54:26 [notice] 1#1: worker process 28 exited with code 0
+2024/07/09 10:54:26 [notice] 1#1: exit
+2024/07/09 10:57:19 [notice] 1#1: using the "epoll" event method
+2024/07/09 10:57:19 [notice] 1#1: nginx/1.27.0
+2024/07/09 10:57:19 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/09 10:57:19 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/09 10:57:19 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/09 10:57:19 [notice] 1#1: start worker processes
+2024/07/09 10:57:19 [notice] 1#1: start worker process 28
+2024/07/09 10:59:12 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/09 10:59:12 [notice] 28#28: gracefully shutting down
+2024/07/09 10:59:12 [notice] 28#28: exiting
+2024/07/09 10:59:12 [notice] 28#28: exit
+2024/07/09 10:59:13 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/09 10:59:13 [notice] 1#1: worker process 28 exited with code 0
+2024/07/09 10:59:13 [notice] 1#1: exit
+2024/07/09 11:01:31 [notice] 1#1: using the "epoll" event method
+2024/07/09 11:01:31 [notice] 1#1: nginx/1.27.0
+2024/07/09 11:01:31 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/07/09 11:01:31 [notice] 1#1: OS: Linux 6.1.0-18-amd64
+2024/07/09 11:01:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/07/09 11:01:31 [notice] 1#1: start worker processes
+2024/07/09 11:01:31 [notice] 1#1: start worker process 28
+2024/07/09 11:01:42 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 83.142.147.16, server: serveradmingrp11.online, request: "GET / HTTP/1.1", upstream: "http://172.18.0.5:3000/", host: "serveradmingrp11.online"
+2024/07/09 11:01:42 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 83.142.147.16, server: serveradmingrp11.online, request: "GET / HTTP/1.1", upstream: "http://172.18.0.5:3000/", host: "serveradmingrp11.online"
+2024/07/09 11:02:43 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/07/09 11:02:43 [notice] 28#28: gracefully shutting down
+2024/07/09 11:02:43 [notice] 28#28: exiting
+2024/07/09 11:02:43 [notice] 28#28: exit
+2024/07/09 11:02:43 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/07/09 11:02:43 [notice] 1#1: worker process 28 exited with code 0
+2024/07/09 11:02:43 [notice] 1#1: exit
