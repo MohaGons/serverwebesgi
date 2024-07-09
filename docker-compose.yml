@@ -57,7 +57,7 @@ services:
     volumes:
       - ./fail2ban/data:/data
       - ./nginx/logs:/var/log/nginx:ro    # Monte les logs Nginx en lecture seule
-      - ./adminer/logs:/var/log/adminer:ro # Monte les logs Adminer en lecture seule
+      - ./nginx/logs/adminer.log:/var/log/nginx/adminer.log:ro # Monte les logs Adminer en lecture seule
     environment:
       - TZ=Europe/Paris
     cap_add:
